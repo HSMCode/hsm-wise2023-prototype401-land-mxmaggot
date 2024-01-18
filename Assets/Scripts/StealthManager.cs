@@ -15,4 +15,12 @@ public class StealthManager : MonoBehaviour
     {
         
     }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Hiding"))
+        {
+            Debug.Log("Hiding");
+        }
+    }
 }
