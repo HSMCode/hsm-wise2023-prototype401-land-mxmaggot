@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class StealthManager : MonoBehaviour
 {
+    public float CatTimer = 10;
+    private bool isHiding;
+    public Animator catAnimator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,9 +16,18 @@ public class StealthManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        CatTimer -= Time.deltaTime;
+        if (CatTimer <= 0 )
+        {
+            catAnimator.SetBool("catAttack", true);
+            if (isHiding == false)
+            {
+                Destroy(this);
+                Debug.Log("YOU ARE DEAD");
+            }
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -21,6 +35,7 @@ public class StealthManager : MonoBehaviour
         if (other.gameObject.CompareTag("Hiding"))
         {
             Debug.Log("Hiding");
+            isHiding = true;
         }
     }
 }

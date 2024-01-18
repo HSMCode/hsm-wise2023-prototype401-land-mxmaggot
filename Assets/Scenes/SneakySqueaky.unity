@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 117772027}
   m_Layer: 0
   m_Name: Cheese
-  m_TagString: Untagged
+  m_TagString: Cheese
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,6 +315,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27e82c8a2f2dc474a8d10d84ae09e664, type: 3}
+--- !u!95 &203485650 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6647131506220806906, guid: 27e82c8a2f2dc474a8d10d84ae09e664, type: 3}
+  m_PrefabInstance: {fileID: 151965093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &203485652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6647131506220806908, guid: 27e82c8a2f2dc474a8d10d84ae09e664, type: 3}
@@ -510,6 +515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -651,7 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736218d446b928141a6bdba166cf7789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.99
+  speed: 0.36
+  mouseAnimator: {fileID: 1319765313}
 --- !u!54 &607704037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -738,6 +748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d14a61181573a4f9cbdfa84e9acf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CatTimer: 10
+  catAnimator: {fileID: 203485650}
 --- !u!1 &701391357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1199,6 +1215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1260,6 +1280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1268,6 +1292,11 @@ PrefabInstance:
 --- !u!4 &1319765311 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8858668344987094261, guid: b78cbd54c6fc6404eac3c4919de1ad38, type: 3}
+  m_PrefabInstance: {fileID: 1821028543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1319765313 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8858668344987094263, guid: b78cbd54c6fc6404eac3c4919de1ad38, type: 3}
   m_PrefabInstance: {fileID: 1821028543}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1418742055
@@ -1743,6 +1772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1803,6 +1836,10 @@ PrefabInstance:
     - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
       propertyPath: m_Name
       value: Obstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2163,6 +2200,10 @@ PrefabInstance:
     - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
       propertyPath: m_Name
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475734868106104719, guid: aafb7c36a5db82a46aa8985994b29d89, type: 3}
+      propertyPath: m_TagString
+      value: Hiding
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
